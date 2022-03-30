@@ -1,0 +1,42 @@
+****** The System ***********************************
+spectrometer(MHz)  600
+spinning_freq(kHz) 14
+channels           {obs} {pulsed}
+nuclei             {obs} {pulsed} {pulsed}
+atomic_coords      CNN_step.cor
+cs_isotropic       *
+csa_parameters     *
+j_coupling         *
+quadrupole         *
+dip_switchboard    *
+csa_switchboard    *
+exchange_nuclei    *
+bond_len_nuclei    *
+bond_ang_nuclei    *
+tors_ang_nuclei    *
+groups_nuclei      *
+******* Pulse Sequence ******************************
+CHN 1  
+timing(usec)   (0) (71.43)91  (71.43 1   71.43) (71.43)91     (0) (0.5) (0.5) (0) (71.43)91    (71.43  1  71.43) (71.43)91     (0)
+power(kHz)      0   0          0    500    0       0           0   500   500    0     0            0   500   0       0          0
+phase(deg)      0   0          0     0     0       0           0    0     0     0     0            0    0    0       0          0
+freq_offs(kHz)  0   0          0     0     0       0           0    0     0     0     0            0    0    0       0          0
+CHN 2          
+timing(usec)   (0) redor-1.pp (71.43     71.43) redor-2.pp    (0) (0.5) (0.5) (0) redor-1.pp   (71.43     71.43) redor-2.pp   (0)
+power(kHz)      0     *          0         0      *            0   500    500  0     *            0         0       *          0
+phase(deg)      0     *          0         0      *            0   0      0    0     *            0         0       *          0
+freq_offs(kHz)  0     *          0         0      *            0   0      0    0     *            0         0       *          0      
+phase_cycling   *     *               *           *            *   *      13   *     *                *             *          *   13(RCV)
+******* Variables ************************************
+******* Options **************************************
+rho0               I1x
+observables        I1p
+EulerAngles        ^asgind30h
+n_gamma            *
+line_broaden(Hz)   *
+zerofill           *
+FFT_dimensions     *
+options            -re -v0
+
+
+
