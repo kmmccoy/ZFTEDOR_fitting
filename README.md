@@ -1,4 +1,4 @@
-# tedor_fitting
+# ZFTEDOR_fitting
 
 Code base for analyzing and fitting TEDOR MAS NMR datasets using SpinEvolution (Veshtort 2011) and Bessel function approximations (Mueller 1995, Jaroniec 2002, Helmus 2008)
 
@@ -40,5 +40,5 @@ This uses the nmrglue auto peak picking algorithm and should be used with cautio
 determine the fitting error for both SpinEv and Bessel function fitting. This adds considerably to the run time, particularly
 if using SpinEv. This can be turned off such that no fitting error estimation is provided.
 
-*Last Updated 27 October 2021 by KMM*
+*Last Updated 30 March 2022 by KMM*
 
